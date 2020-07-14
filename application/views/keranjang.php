@@ -27,4 +27,16 @@
             <td align="right">Rp. <?php echo number_format($this->cart->total(),0,',','.') ?></td>
         </tr>
     </table>
+
+    <!-- fitur hapus kranjang belanja dan cekout -->
+
+    <div align="right">
+
+        <a href="<?php echo base_url('dashboard')?>"><div class="btn btn-sm btn-danger">Hapus Keranjang</div></a>
+        <a href="<?php echo base_url('dashboard/index')?>"><div class="btn btn-sm btn-primary">Lanjutkan Belanja</div></a>
+        <a href="<?php echo base_url('dashboard/Pembayaran')?>"><div class="btn btn-sm btn-success">Pembayaran</div></a>
+
+
+    </div>
+
 </div>
