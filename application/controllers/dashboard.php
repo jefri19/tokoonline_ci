@@ -27,10 +27,10 @@ class Dashboard extends CI_Controller{
 
     public function detail_keranjang()
     {
-    $this->load->view('templates/header');
-    $this->load->view('templates/sidebar');
-    $this->load->view('keranjang');
-    $this->load->view('templates/footer');  
+        $this->load->view('templates/header');
+        $this->load->view('templates/sidebar');
+        $this->load->view('keranjang');
+        $this->load->view('templates/footer');  
     }
 
     public function hapus_keranjang()
@@ -49,11 +49,17 @@ class Dashboard extends CI_Controller{
 
     public function proses_pesanan()
     {
-        $this->cart->destroy();
-        $this->load->view('templates/header');
-        $this->load->view('templates/sidebar');
-        $this->load->view('proses_pesanan');
-        $this->load->view('templates/footer');  
+        $is_processed = $this->model_invoice->index();
+        if($is_processed){
+            $this->cart->destroy();
+            $this->load->view('templates/header');
+            $this->load->view('templates/sidebar');
+            $this->load->view('proses_pesanan');
+            $this->load->view('templates/footer'); 
+        }else {
+            echo "Maaf, pesanan Gagal diproses!";
+        }
+     
     }
 
 }

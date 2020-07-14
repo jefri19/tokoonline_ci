@@ -22,14 +22,15 @@
             <form method="post"  action="<?php echo base_url('dashboard/proses_pesanan')?>" >
 
             <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama" placeholder="Nama Lengkap Anda"class="form-control">
+            </div>
+
+            <div class="form-group">
                 <label>Alamat Lengkap</label>
                 <input type="text" name="alamat" placeholder="Alamat Lengkap Anda"class="form-control">
             </div>
 
-            <div class="form-group">
-                <label>Nama Lengkap</label>
-                <input type="text" name="nama" placeholder="Nama Lengkap Anda"class="form-control">
-            </div>
 
             <div class="form-group">
                 <label>No. Telepon</label>
