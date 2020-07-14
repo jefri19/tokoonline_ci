@@ -13,12 +13,13 @@
                     }
 
                   echo "<h4>Total Belanja Anda: Rp. ".number_format($grend_total,0,',','.');
-                }
+              
                 ?>
             </div><br><br>
+            
             <div><h3>Input Alamat Pengiriman dan Pembayaran</h3>
 
-            <form method="post" action="<?php echo base_url()?> dashboard/proses_pesanan">
+            <form method="post"  action="<?php echo base_url('dashboard/proses_pesanan')?>" >
 
             <div class="form-group">
                 <label>Alamat Lengkap</label>
@@ -60,6 +61,13 @@
             <button type="submit" class="btn btn-sm btn-primary mb-3">Pesan</button>
 
             </form>
+
+            <?php
+               }else
+               {
+                   echo " <h4>Keranjang Belanja Anda Masih Kosong";
+               }
+            ?>
         
         </div>
         <div class="col-md-2"></div>
