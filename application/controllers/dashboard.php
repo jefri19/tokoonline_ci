@@ -36,7 +36,7 @@ class Dashboard extends CI_Controller{
     public function hapus_keranjang()
     {
         $this->cart->destroy();
-        redirect('dhasboart/index');
+        redirect('dashboard/index');
     }
 
     public function pembayaran()
