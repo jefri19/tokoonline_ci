@@ -39,7 +39,7 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="model-header">
-         <h5 class="modal-title" id="exampleModalLabel">FORM INPUT PRODUK</h5>
+             <h5 class="modal-title" id="exampleModalLabel">FORM INPUT PRODUK</h5>
              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
              <span aria-hidden="true">&times;</span>
              </button>            
@@ -56,12 +56,20 @@
             </div>
             <div class="form-group">
                 <label for="">Kategori</label>
-                <input type="text" name="kategori" class="form-control">
+                <select class="form-control" name="kategori">
+                    <option value="">Elektronik</option>
+                    <option value="">Pakaian Pria</option>
+                    <option value="">Pakaian Wanita</option>
+                    <option value="">pakaian Anak</option>
+                    <option value="">Peralatan Olahraga</option>
+                </select>
+                
             </div>
             <div class="form-group">
                 <label for="">Harga</label>
-                <input type="text" name="harga" class="form-control">
+                <input type="text" name="harga" class="form-control">     
             </div>
+            
             <div class="form-group">
                 <label for="">Stok</label>
                 <input type="text" name="stok" class="form-control">

@@ -40,27 +40,27 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?php echo base_url('kategori/elektronik')?>">
         <i class="fas fa-fw fa-tv"></i>
         <span>Elektronik</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?php echo base_url('kategori/pakaian_pria')?>">
         <i class="fas fa-fw fa-tshirt"></i>
         <span>Pakaian Pria</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?php echo base_url('kategori/pakaian_wanita')?>">
         <i class="fas fa-fw fa-tshirt"></i>
         <span>Pakaian Wanita</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?php echo base_url('kategori/pakaian_anak')?>">
         <i class="fas fa-fw fa-tshirt"></i>
         <span>Pakaian Anak</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="tables.html">
+      <a class="nav-link" href="<?php echo base_url('kategori/peralatan_olahraga')?>">
         <i class="fas fa-fw fa-futbol"></i>
         <span>Peralatan Olahraga</span></a>
     </li>
