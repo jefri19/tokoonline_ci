@@ -31,7 +31,7 @@
       <?php foreach($barang as $brg) : ?>
 
          <div class="card ml-3 mb-3" style="width: 16rem;" >
-         <img style="width: 220px;" src="<?php echo base_url().'/uploads/'.$brg->gambar ?>" alt="">
+         <img  style="width: 220px;" src="<?php echo base_url().'/uploads/'.$brg->gambar ?>" >
          <div class="card-body">
        
              <h5 class="card-title mb-1"><?php echo $brg->nama_brg ?></h5>
@@ -39,7 +39,9 @@
              <span class="badge badge-pill badge-success mb-3">Rp. <?php echo number_format($brg->harga);  ?>
             </span>
             <?php echo anchor('dashboard/tambah_ke_keranjang/'.$brg->id_brg, '<div class="btn btn-sm btn-primary">Tambah ke keranjang</div>')?>
-             <a href="#" class="btn btn-sm btn-success">Detail</a>
+             
+            <?php echo anchor('dashboard/detail/'.$brg->id_brg, '<div class="btn btn-sm btn-success">Detail</div>')?>
+            
          </div>
          </div>
 
