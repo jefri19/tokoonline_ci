@@ -130,7 +130,8 @@
             <ul class="nav navbar-nav navbar-right">
               <li>
                  <?php
-                    $keranjang = 'Keranjang Belanja: '.$this->cart->total_items(). ' items '
+                    $keranjang = 'Keranjang Belanja: '.$this->cart->total_items(). 
+                    ' items '
                   ?>
 
                   <?php echo anchor('dashboard/detail_keranjang', $keranjang)  ?>
